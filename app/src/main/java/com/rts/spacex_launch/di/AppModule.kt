@@ -1,8 +1,8 @@
-package com.rts.graphqltest.di
+package com.rts.spacex_launch.di
 
 import android.content.Context
-import com.rts.graphqltest.localdatabase.AppDatabase
-import com.rts.graphqltest.localdatabase.dao.LaunchesDao
+import com.rts.spacex_launch.localdatabase.AppDatabase
+import com.rts.spacex_launch.localdatabase.dao.LaunchesDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.rts.graphqltest.util
+package com.rts.spacex_launch.util
 
 import android.content.Context
 import android.view.View
@@ -6,10 +6,8 @@ import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.navigation.findNavController
 import com.bumptech.glide.Glide
-import com.clzola.glottie.GlottieView
-import com.clzola.glottie.GlottieViewTarget
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.rts.graphqltest.R
+import com.rts.spacex_launch.R
 
 @BindingAdapter("imageUrl")
 fun bindImage(imageView: ImageView, imgUrl: String?) {

@@ -1,11 +1,11 @@
-package com.rts.graphqltest.localdatabase
+package com.rts.spacex_launch.localdatabase
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.rts.graphqltest.localdatabase.dao.LaunchesDao
-import com.rts.graphqltest.localdatabase.entity.LaunchEntity
+import com.rts.spacex_launch.localdatabase.dao.LaunchesDao
+import com.rts.spacex_launch.localdatabase.entity.LaunchEntity
 
 
 @Database(

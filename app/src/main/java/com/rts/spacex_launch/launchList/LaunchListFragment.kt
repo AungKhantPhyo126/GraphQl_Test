@@ -1,15 +1,14 @@
-package com.rts.graphqltest.launchList
+package com.rts.spacex_launch.launchList
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
-import com.rts.graphqltest.ViewState
-import com.rts.graphqltest.databinding.FragmentLaunchListBinding
-import com.rts.graphqltest.util.showDialog
+import com.rts.spacex_launch.ViewState
+import com.rts.spacex_launch.databinding.FragmentLaunchListBinding
+import com.rts.spacex_launch.util.showDialog
 import dagger.hilt.android.AndroidEntryPoint
 
 

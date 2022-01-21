@@ -1,4 +1,4 @@
-package com.rts.graphqltest.domain
+package com.rts.spacex_launch.domain
 
 data class Launch(
     val id:String,

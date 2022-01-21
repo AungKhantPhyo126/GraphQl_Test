@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rts.graphqltest">
+    package="com.rts.spacex_launch">
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:name=".GraphqltestApp"
+        android:name="com.rts.spacex_launch.GraphqltestApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GraphQlTest">
         <activity
-            android:name=".MainActivity"
+            android:name="com.rts.spacex_launch.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

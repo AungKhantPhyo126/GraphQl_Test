@@ -1,4 +1,4 @@
-package com.rts.graphqltest
+package com.rts.spacex_launch
 
 import org.junit.Test
 

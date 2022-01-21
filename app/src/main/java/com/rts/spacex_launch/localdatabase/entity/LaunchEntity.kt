@@ -1,8 +1,8 @@
-package com.rts.graphqltest.localdatabase.entity
+package com.rts.spacex_launch.localdatabase.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.rts.graphqltest.domain.Launch
+import com.rts.spacex_launch.domain.Launch
 
 @Entity(tableName = "launches")
 data class LaunchEntity(

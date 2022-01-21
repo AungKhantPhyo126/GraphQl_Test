@@ -1,13 +1,12 @@
-package com.rts.graphqltest.launchList
+package com.rts.spacex_launch.launchList
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.rts.graphqltest.LaunchesQuery
-import com.rts.graphqltest.databinding.ItemLaunchBinding
-import com.rts.graphqltest.domain.Launch
+import com.rts.spacex_launch.databinding.ItemLaunchBinding
+import com.rts.spacex_launch.domain.Launch
 
 
 class MyLaunchItemRecyclerViewAdapter: ListAdapter<Launch,LaunchViewHolder>(LaunchDiffCallback){

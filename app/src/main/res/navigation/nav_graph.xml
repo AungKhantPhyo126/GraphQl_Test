@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/launchListFragment"
-        android:name="com.rts.graphqltest.launchList.LaunchListFragment"
+        android:name="com.rts.spacex_launch.launchList.LaunchListFragment"
         android:label="LaunchListFragment" />
 </navigation>

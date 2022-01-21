@@ -1,10 +1,10 @@
-package com.rts.graphqltest.localdatabase.dao
+package com.rts.spacex_launch.localdatabase.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.rts.graphqltest.localdatabase.entity.LaunchEntity
+import com.rts.spacex_launch.localdatabase.entity.LaunchEntity
 
 @Dao
 interface LaunchesDao {

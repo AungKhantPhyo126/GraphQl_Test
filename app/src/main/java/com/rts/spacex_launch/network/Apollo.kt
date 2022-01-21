@@ -1,8 +1,8 @@
-package com.rts.graphqltest.network
+package com.rts.spacex_launch.network
 import com.apollographql.apollo3.ApolloClient
-import com.rts.graphqltest.LaunchesQuery
-import com.rts.graphqltest.domain.Launch
-import com.rts.graphqltest.localdatabase.entity.LaunchEntity
+import com.rts.spacex_launch.LaunchesQuery
+import com.rts.spacex_launch.domain.Launch
+import com.rts.spacex_launch.localdatabase.entity.LaunchEntity
 
 val apolloClient = ApolloClient.Builder()
     .serverUrl("https://api.spacex.land/graphql/")

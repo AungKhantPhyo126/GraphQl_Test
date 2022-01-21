@@ -1,13 +1,13 @@
-package com.rts.graphqltest.launchList
+package com.rts.spacex_launch.launchList
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.apollographql.apollo3.exception.ApolloNetworkException
-import com.rts.graphqltest.ViewState
-import com.rts.graphqltest.domain.Launch
-import com.rts.graphqltest.repository.LaunchListRepo
+import com.rts.spacex_launch.ViewState
+import com.rts.spacex_launch.domain.Launch
+import com.rts.spacex_launch.repository.LaunchListRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

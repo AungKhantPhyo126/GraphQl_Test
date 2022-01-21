@@ -1,4 +1,4 @@
-package com.rts.graphqltest
+package com.rts.spacex_launch
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

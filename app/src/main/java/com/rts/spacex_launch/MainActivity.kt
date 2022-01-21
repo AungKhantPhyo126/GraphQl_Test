@@ -1,9 +1,9 @@
-package com.rts.graphqltest
+package com.rts.spacex_launch
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.rts.graphqltest.databinding.ActivityMainBinding
+import com.rts.spacex_launch.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -1,15 +1,14 @@
-package com.rts.graphqltest.repository
+package com.rts.spacex_launch.repository
 
 import android.util.Log
 import arrow.core.Either
-import com.rts.graphqltest.LaunchesQuery
-import com.rts.graphqltest.domain.Launch
-import com.rts.graphqltest.localdatabase.AppDatabase
-import com.rts.graphqltest.localdatabase.dao.LaunchesDao
-import com.rts.graphqltest.localdatabase.entity.asDomain
-import com.rts.graphqltest.network.apolloClient
-import com.rts.graphqltest.network.asDomain
-import com.rts.graphqltest.network.asEntity
+import com.rts.spacex_launch.LaunchesQuery
+import com.rts.spacex_launch.domain.Launch
+import com.rts.spacex_launch.localdatabase.AppDatabase
+import com.rts.spacex_launch.localdatabase.dao.LaunchesDao
+import com.rts.spacex_launch.localdatabase.entity.asDomain
+import com.rts.spacex_launch.network.apolloClient
+import com.rts.spacex_launch.network.asEntity
 import javax.inject.Inject
 
 class LaunchListRepo @Inject constructor(

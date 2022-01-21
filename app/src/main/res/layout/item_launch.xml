@@ -6,7 +6,7 @@
     <data>
         <variable
             name="launch"
-            type="com.rts.graphqltest.domain.Launch" />
+            type="com.rts.spacex_launch.domain.Launch" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
