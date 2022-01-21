@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/tv_akp"
+        android:id="@+id/tv_label_spacex_launches"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aung Khant Phyo"
+        android:text="@string/spacex_launches"
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_akp"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_spacex_launches"
         tools:context=".launchList.LaunchListFragment"
         tools:listitem="@layout/item_launch" />
     <com.airbnb.lottie.LottieAnimationView
@@ -58,5 +58,5 @@
         android:layout_height="wrap_content"
         android:visibility="invisible"
         tools:visibility="visible"
-        app:constraint_referenced_ids="tv_akp,rv_launch_list" />
+        app:constraint_referenced_ids="tv_label_spacex_launches,rv_launch_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>

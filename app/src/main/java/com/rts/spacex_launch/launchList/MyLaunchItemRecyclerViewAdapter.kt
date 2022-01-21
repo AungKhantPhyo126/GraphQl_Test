@@ -9,11 +9,13 @@ import com.rts.spacex_launch.databinding.ItemLaunchBinding
 import com.rts.spacex_launch.domain.Launch
 
 
-class MyLaunchItemRecyclerViewAdapter: ListAdapter<Launch,LaunchViewHolder>(LaunchDiffCallback){
+class MyLaunchItemRecyclerViewAdapter(
+    private val navigateToDetail: (data: Launch) -> Unit
+) : ListAdapter<Launch, LaunchViewHolder>(LaunchDiffCallback) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LaunchViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding = ItemLaunchBinding.inflate(layoutInflater, parent, false)
-        return LaunchViewHolder(binding)
+        return LaunchViewHolder(binding, navigateToDetail)
     }
 
     override fun onBindViewHolder(holder: LaunchViewHolder, position: Int) {
@@ -23,7 +25,8 @@ class MyLaunchItemRecyclerViewAdapter: ListAdapter<Launch,LaunchViewHolder>(Laun
 
 
 }
-object LaunchDiffCallback: DiffUtil.ItemCallback<Launch>() {
+
+object LaunchDiffCallback : DiffUtil.ItemCallback<Launch>() {
 
     override fun areItemsTheSame(oldItem: Launch, newItem: Launch): Boolean {
         return oldItem.id == newItem.id
@@ -36,9 +39,13 @@ object LaunchDiffCallback: DiffUtil.ItemCallback<Launch>() {
 
 class LaunchViewHolder(
     private val binding: ItemLaunchBinding,
-): RecyclerView.ViewHolder(binding.root){
+    private val navigateToDetail: (data: Launch) -> Unit
+) : RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(launch:Launch) {
-        binding.launch=launch
+    fun bind(launch: Launch) {
+        binding.launch = launch
+        binding.root.setOnClickListener {
+            navigateToDetail(launch)
+        }
     }
 }

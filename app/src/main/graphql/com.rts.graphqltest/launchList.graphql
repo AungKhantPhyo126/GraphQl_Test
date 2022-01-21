@@ -5,6 +5,7 @@ query Launches {
         mission_name
         links {
             flickr_images
+            wikipedia
         }
         details
     }

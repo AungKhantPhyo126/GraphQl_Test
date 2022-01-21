@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/launchListFragment">
 
     <fragment
         android:id="@+id/launchListFragment"
         android:name="com.rts.spacex_launch.launchList.LaunchListFragment"
-        android:label="LaunchListFragment" />
+        android:label="LaunchListFragment" >
+        <action
+            android:id="@+id/action_launchListFragment_to_launchDetailFragment"
+            app:destination="@id/launchDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/launchDetailFragment"
+        android:name="com.rts.spacex_launch.launchDetail.LaunchDetailFragment"
+        android:label="fragment_launch_detail"
+        tools:layout="@layout/fragment_launch_detail" >
+        <argument
+            android:name="launchId"
+            app:argType="string" />
+    </fragment>
 </navigation>

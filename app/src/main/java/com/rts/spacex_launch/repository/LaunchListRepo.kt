@@ -2,7 +2,7 @@ package com.rts.spacex_launch.repository
 
 import android.util.Log
 import arrow.core.Either
-import com.rts.spacex_launch.LaunchesQuery
+import com.rts.graphqltest.LaunchesQuery
 import com.rts.spacex_launch.domain.Launch
 import com.rts.spacex_launch.localdatabase.AppDatabase
 import com.rts.spacex_launch.localdatabase.dao.LaunchesDao
@@ -48,6 +48,10 @@ class LaunchListRepo @Inject constructor(
 
     suspend fun getLaunchListFromDb():List<Launch>{
         return launchesDao.getLaunchList().map { it.asDomain() }
+    }
+
+    suspend fun getLaunchDetails(id:String):Launch{
+        return launchesDao.getLaunchDetail(id).asDomain()
     }
 
 }

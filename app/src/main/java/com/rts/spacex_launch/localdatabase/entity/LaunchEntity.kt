@@ -9,7 +9,9 @@ data class LaunchEntity(
     @PrimaryKey val id:String,
     val launchDateLocal:String,
     val missionName:String,
-    val flickerImage:String
+    val flickerImage:String,
+    val details:String,
+    val wikiLink:String
 )
 
 fun LaunchEntity.asDomain():Launch{
@@ -17,6 +19,8 @@ fun LaunchEntity.asDomain():Launch{
         id=id,
         launchDateLocal= launchDateLocal,
         missionName = missionName,
-        flickerImage = flickerImage
+        flickerImage = flickerImage,
+        details = details,
+        wikiLink = wikiLink
     )
 }

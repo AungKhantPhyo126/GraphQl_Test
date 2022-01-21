@@ -25,6 +25,7 @@ class LaunchListViewModel @Inject constructor(
 
     private fun fetchLaunchList() {
         viewModelScope.launch {
+            _viewStateLive.value=ViewState.Loading
             launchListRepo.fetchLaunchListFromNetwork().fold({
                getLaunchList()
             },{

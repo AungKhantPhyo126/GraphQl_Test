@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.rts.spacex_launch.ViewState
 import com.rts.spacex_launch.databinding.FragmentLaunchListBinding
 import com.rts.spacex_launch.util.showDialog
@@ -28,7 +30,13 @@ class LaunchListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = MyLaunchItemRecyclerViewAdapter()
+        val adapter = MyLaunchItemRecyclerViewAdapter { data ->
+            findNavController().navigate(
+                LaunchListFragmentDirections.actionLaunchListFragmentToLaunchDetailFragment(
+                    data.id
+                )
+            )
+        }
         binding.rvLaunchList.adapter=adapter
 
         viewModel.viewStateLive.observe(viewLifecycleOwner){
