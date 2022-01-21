@@ -1,0 +1,11 @@
+query Launches {
+    launches {
+        id
+        launch_date_local
+        mission_name
+        links {
+            flickr_images
+        }
+        details
+    }
+}
